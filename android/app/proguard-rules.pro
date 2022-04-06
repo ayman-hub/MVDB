@@ -1,0 +1,1 @@
+-keep class com.ayman.tmdb_task.tmdb_task.BuildConfig { *; }
