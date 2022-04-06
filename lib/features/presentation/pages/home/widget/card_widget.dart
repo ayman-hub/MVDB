@@ -69,6 +69,7 @@ late PostWatchListModel postWatchListModel;
                   Expanded(
                     child: Text(
                       data.overview.toString(),
+                      maxLines: 5,
                       style: TextStyle(
                         color: Colors.white,
                         fontSize: 12.sp,

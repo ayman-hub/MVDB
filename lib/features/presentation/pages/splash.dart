@@ -27,7 +27,6 @@ class _SplashScreenState extends State<SplashScreen>
 
   @override
   void initState() {
-    Get.find<GetToken>();
     _controller = AnimationController(vsync: this);
     _controller.addListener(() {
       if (_controller.isCompleted) {

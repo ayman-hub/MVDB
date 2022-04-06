@@ -16,6 +16,13 @@ class MyApp extends StatelessWidget {
     return ScreenUtilInit(
         builder: () => GetMaterialApp(
               title: 'MVDB',
+              builder: (context,child){
+                ScreenUtil.setContext(context);
+                return MediaQuery(
+                  data: MediaQuery.of(context).copyWith(textScaleFactor: 1),
+                  child: child!,
+                );
+              },
               theme: ThemeData(
                 primaryColor: const Color(0xFF1B2C3B),
                 backgroundColor: const Color(0xff1C262F),
